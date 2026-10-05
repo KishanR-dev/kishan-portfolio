@@ -29,7 +29,10 @@ export function NavigationSpine() {
       <div>
         <div className="font-sans font-bold text-lg text-text-primary tracking-tight mb-16 uppercase">
           Kishan R
-          <span className="block text-amber-core text-xs font-mono tracking-widest mt-1">Platform Eng</span>
+          <span className="block text-amber-core text-xs font-mono tracking-widest mt-1">Engineering Professional</span>
+          <span className="block text-text-tertiary text-[10px] font-sans mt-2 normal-case tracking-wide">
+            Build Quality & System Transformation | CI/CD Automation & Observability
+          </span>
         </div>
 
         <ul className="flex flex-col gap-8">

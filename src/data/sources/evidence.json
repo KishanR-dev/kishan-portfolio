@@ -5,25 +5,18 @@
     "synopsis": "The foundational API, domain modeling, and state machines for Production Operations & Incident Management.",
     "metrics": [
       {
-        "label": "ID Generation Baseline",
-        "value": 10.62,
-        "exactString": "10.62",
-        "unit": "s",
-        "verificationSource": "servicepulse/benchmarks/baseline_results.json"
+        "label": "API Contracts",
+        "value": 1,
+        "exactString": "VALIDATED",
+        "unit": "",
+        "verificationSource": "servicepulse/app/main.py"
       },
       {
-        "label": "ID Generation Optimized",
-        "value": 5.5206,
-        "exactString": "5.5206",
-        "unit": "s",
-        "verificationSource": "servicepulse/benchmarks/transformed_results.json"
-      },
-      {
-        "label": "Success Rate Optimization",
-        "value": 100,
-        "exactString": "100",
-        "unit": "%",
-        "verificationSource": "servicepulse/benchmarks/transformed_results.json"
+        "label": "State Machine",
+        "value": 1,
+        "exactString": "VERIFIED",
+        "unit": "",
+        "verificationSource": "servicepulse/tests/"
       }
     ],
     "artifacts": [
@@ -134,7 +127,7 @@
     "title": "Transformation Command Center",
     "synopsis": "A visual Engineering & Operations Command Center acting as the final executive dashboard orchestrating metrics and portfolio controls.",
     "metrics": [
-       {
+      {
         "label": "System State",
         "value": 1,
         "exactString": "READY",

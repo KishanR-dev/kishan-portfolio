@@ -130,7 +130,7 @@ RETRYING_CONNECTION_T...
         <div className="border border-panel-border bg-surface-elevated w-full max-w-6xl h-[70vh] flex flex-col">
           <div className="border-b border-panel-border p-4 flex justify-between font-mono text-xs text-text-secondary pr-8 w-full overflow-hidden">
             <span className="truncate">TRANSFORMATION COMMAND CENTER</span>
-            <span className="text-amber-core shrink-0 ml-2">● RUNNING</span>
+            <span className="text-amber-core shrink-0 ml-2">● STATIC EVIDENCE</span>
           </div>
           <div className="flex-grow flex items-center justify-center relative p-8">
              <h2 className="text-6xl md:text-9xl font-sans font-black text-text-primary tracking-tighter uppercase z-10 text-center">Observe</h2>
