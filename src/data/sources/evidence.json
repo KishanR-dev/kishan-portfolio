@@ -1,0 +1,150 @@
+[
+  {
+    "id": "BUILD",
+    "title": "ServicePulse",
+    "synopsis": "The foundational API, domain modeling, and state machines for Production Operations & Incident Management.",
+    "metrics": [
+      {
+        "label": "ID Generation Baseline",
+        "value": 10.62,
+        "exactString": "10.62",
+        "unit": "s",
+        "verificationSource": "servicepulse/benchmarks/baseline_results.json"
+      },
+      {
+        "label": "ID Generation Optimized",
+        "value": 5.5206,
+        "exactString": "5.5206",
+        "unit": "s",
+        "verificationSource": "servicepulse/benchmarks/transformed_results.json"
+      },
+      {
+        "label": "Success Rate Optimization",
+        "value": 100,
+        "exactString": "100",
+        "unit": "%",
+        "verificationSource": "servicepulse/benchmarks/transformed_results.json"
+      }
+    ],
+    "artifacts": [
+      "servicepulse/app/main.py",
+      "servicepulse/tests/"
+    ]
+  },
+  {
+    "id": "QUALITY",
+    "title": "Engineering Quality & CI/CD",
+    "synopsis": "The introduction of engineering rigor via automated QA, static analysis, containerization, and continuous delivery pipelines.",
+    "metrics": [
+      {
+        "label": "Test Suite",
+        "value": 83,
+        "unit": "tests",
+        "verificationSource": "engineering-quality-cicd/.github/workflows/ci.yml"
+      },
+      {
+        "label": "Coverage",
+        "value": 94.62,
+        "exactString": "94.62",
+        "unit": "%",
+        "verificationSource": "servicepulse/coverage.xml"
+      },
+      {
+        "label": "Static Analysis",
+        "value": 0,
+        "unit": "count",
+        "verificationSource": "engineering-quality-cicd/scripts/lint.sh"
+      }
+    ],
+    "artifacts": [
+      "engineering-quality-cicd/.github/workflows/ci.yml",
+      "engineering-quality-cicd/Dockerfile"
+    ]
+  },
+  {
+    "id": "TRANSFORM",
+    "title": "Legacy Transformation & Performance",
+    "synopsis": "Bottleneck identification, profiling, Root Cause Analysis (RCA), and concurrency optimization.",
+    "metrics": [
+      {
+        "label": "Baseline",
+        "value": 10.62,
+        "exactString": "10.62",
+        "unit": "s",
+        "verificationSource": "servicepulse/benchmarks/baseline_results.json"
+      },
+      {
+        "label": "Baseline Success",
+        "value": 2,
+        "unit": "count",
+        "verificationSource": "servicepulse/benchmarks/baseline_results.json"
+      },
+      {
+        "label": "Baseline Fail",
+        "value": 98,
+        "unit": "count",
+        "verificationSource": "servicepulse/benchmarks/baseline_results.json"
+      },
+      {
+        "label": "Transformed",
+        "value": 5.5206,
+        "exactString": "5.5206",
+        "previousValue": 10.62,
+        "unit": "s",
+        "verificationSource": "servicepulse/benchmarks/transformed_results.json"
+      },
+      {
+        "label": "Transformed Success",
+        "value": 50,
+        "unit": "count",
+        "verificationSource": "servicepulse/benchmarks/transformed_results.json"
+      },
+      {
+        "label": "Transformed Fail",
+        "value": 0,
+        "unit": "count",
+        "verificationSource": "servicepulse/benchmarks/transformed_results.json"
+      }
+    ],
+    "artifacts": [
+      "servicepulse/benchmarks/benchmark_concurrency_after.py",
+      "servicepulse/docs/RCA_001_concurrent_id_generation.md"
+    ]
+  },
+  {
+    "id": "TRACE",
+    "title": "Requirements Traceability",
+    "synopsis": "Automated mechanism tracing functional requirements through design, source code, and test cases to prevent documentation drift.",
+    "metrics": [
+      {
+        "label": "Requirements Traced",
+        "value": 16,
+        "unit": "count",
+        "verificationSource": "docs/traceability/traceability.json"
+      }
+    ],
+    "artifacts": [
+      "docs/traceability/traceability.json",
+      "scripts/validate_traceability.py",
+      "docs/PROJECT4_REQUIREMENTS_TRACEABILITY.md"
+    ]
+  },
+  {
+    "id": "OBSERVE",
+    "title": "Transformation Command Center",
+    "synopsis": "A visual Engineering & Operations Command Center acting as the final executive dashboard orchestrating metrics and portfolio controls.",
+    "metrics": [
+       {
+        "label": "System State",
+        "value": 1,
+        "exactString": "READY",
+        "unit": "",
+        "verificationSource": "servicepulse-hf/state.json"
+      }
+    ],
+    "artifacts": [
+      "servicepulse-hf/",
+      "scripts/build_command_center.py"
+    ]
+  }
+]

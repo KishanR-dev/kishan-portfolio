@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #030303; /* void */
+    --foreground: #EAEAEA; /* text-primary */
+  }
+
+  body {
+    @apply bg-void text-text-primary antialiased min-h-screen selection:bg-amber-core selection:text-void;
+    background-color: var(--background);
+    color: var(--foreground);
+    /* Strict scrolling resets */
+  }
+}
+
+@layer utilities {
+  .noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+
+  /* Grid overlay for technical/machined feel */
+  .technical-grid {
+    background-size: 32px 32px;
+    background-image: linear-gradient(to right, rgba(26, 26, 26, 0.4) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(26, 26, 26, 0.4) 1px, transparent 1px);
+    pointer-events: none;
+  }
+
+  /* Hide scrollbar */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
