@@ -1,3 +1,4 @@
+import re
 import os
 import sys
 from markdown import markdown
@@ -97,16 +98,16 @@ def convert_md_to_pdf(md_file_path, pdf_file_path):
     # creates standard h1/p tags which we want specially styled
 
     # Simple replacement to center the header and style the contact info
-    html_template = html_template.replace(
-        '<h1>Kishan Ramesha</h1>\n<p><strong>Contact:</strong> +91 63611 51894 | kishanramesha@outlook.com<br />\n<strong>LinkedIn:</strong> linkedin.com/in/kisshaannn | <strong>GitHub:</strong> github.com/KishanR-dev</p>',
+    html_template = re.sub(
+        r'<h1>Kishan Ramesha</h1>\s*<p><strong>Contact:</strong>[\s\S]*?</p>',
         '''
         <h1>Kishan Ramesha</h1>
         <div class="contact-info">
-            <strong>Contact:</strong> +91 63611 51894 &nbsp;|&nbsp; kishanramesha@outlook.com<br/>
-            <strong>LinkedIn:</strong> linkedin.com/in/kisshaannn &nbsp;|&nbsp; <strong>GitHub:</strong> github.com/KishanR-dev
+            <strong>Contact:</strong> <a href="tel:+916361151894">+91 63611 51894</a> &nbsp;|&nbsp; <a href="mailto:kishanramesha@outlook.com">kishanramesha@outlook.com</a><br/>
+            <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/k4nr">linkedin.com/in/k4nr</a> &nbsp;|&nbsp; <strong>GitHub:</strong> <a href="https://github.com/KishanR-dev">github.com/KishanR-dev</a><br/>
+            <strong>Portfolio:</strong> <a href="https://kishan-portfolio-gamma-steel.vercel.app/">https://kishan-portfolio-gamma-steel.vercel.app/</a>
         </div>
-        '''
-    )
+        ''', html_template)
 
     # Fix strong bolding for company names and Job titles on the same line
     html_template = html_template.replace(
@@ -166,7 +167,7 @@ if __name__ == "__main__":
     print(f"Generating PDF from {md_path} to {pdf_path}...")
     success = convert_md_to_pdf(md_path, pdf_path)
     if success:
-        print(f"✓ PDF generated successfully at {pdf_path}")
+        print(f"PDF generated successfully at {pdf_path}")
     else:
         print("✗ Error generating PDF")
         sys.exit(1)

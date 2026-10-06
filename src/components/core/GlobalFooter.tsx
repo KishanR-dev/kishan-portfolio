@@ -34,7 +34,7 @@ export function GlobalFooter() {
             </a>
 
             <a
-              href="https://linkedin.com/in/kisshaannn"
+              href="https://linkedin.com/in/k4nr"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-amber-core hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-core transition-colors"

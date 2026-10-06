@@ -1,8 +1,8 @@
 # Kishan Ramesha
 
 **Contact:** +91 63611 51894 | kishanramesha@outlook.com  
-**LinkedIn:** linkedin.com/in/kisshaannn | **GitHub:** github.com/KishanR-dev  
-
+**LinkedIn:** linkedin.com/in/k4nr | **GitHub:** github.com/KishanR-dev  
+**Portfolio:** https://kishan-portfolio-gamma-steel.vercel.app/  
 ---
 
 ## Professional Summary

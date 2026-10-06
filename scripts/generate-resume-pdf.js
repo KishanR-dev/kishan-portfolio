@@ -112,9 +112,10 @@ async function generateResumePDF() {
   <div class="header">
     <h1>Kishan Ramesha</h1>
     <div class="contact">
-      <strong>Contact:</strong> +91 63611 51894 | kishanramesha@outlook.com<br>
-      <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/kisshaannn">linkedin.com/in/kisshaannn</a> |
-      <strong>GitHub:</strong> <a href="https://github.com/KishanR-dev">github.com/KishanR-dev</a>
+      <strong>Contact:</strong> <a href="tel:+916361151894">+91 63611 51894</a> | <a href="mailto:kishanramesha@outlook.com">kishanramesha@outlook.com</a><br>
+      <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/k4nr">linkedin.com/in/k4nr</a> |
+      <strong>GitHub:</strong> <a href="https://github.com/KishanR-dev">github.com/KishanR-dev</a><br>
+      <strong>Portfolio:</strong> <a href="https://kishan-portfolio-gamma-steel.vercel.app/">https://kishan-portfolio-gamma-steel.vercel.app/</a>
     </div>
   </div>
 
